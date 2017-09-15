@@ -20,7 +20,7 @@
 
 		<!-- Spring MVC -->
 		<spring-framework.version>4.3.0.RELEASE</spring-framework.version>
-		
+
 		<!-- Servlet API -->
 		<servlet.version>3.1.0</servlet.version>
 	</properties>
@@ -47,9 +47,12 @@
 				<type>pom</type>
 				<scope>import</scope>
 			</dependency>
+
+
+
 		</dependencies>
 	</dependencyManagement>
-	
+
 	<dependencies>
 		<!-- Spring MVC -->
 		<dependency>
@@ -63,6 +66,11 @@
 			<artifactId>javax.servlet-api</artifactId>
 			<version>${servlet.version}</version>
 			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>com.mchange</groupId>
+			<artifactId>c3p0</artifactId>
+			<version>0.9.5.2</version>
 		</dependency>
 	</dependencies>
 
