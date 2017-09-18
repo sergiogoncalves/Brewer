@@ -23,6 +23,10 @@
 
 		<!-- Servlet API -->
 		<servlet.version>3.1.0</servlet.version>
+		
+		<!-- Thymeleaf -->
+		<thymeleaf.version>3.0.0.RELEASE</thymeleaf.version>
+		
 	</properties>
 
 	<build>
@@ -67,11 +71,22 @@
 			<version>${servlet.version}</version>
 			<scope>provided</scope>
 		</dependency>
+
+
+		<!-- Thymeleaf -->
+
 		<dependency>
-			<groupId>com.mchange</groupId>
-			<artifactId>c3p0</artifactId>
-			<version>0.9.5.2</version>
+			<groupId>org.thymeleaf</groupId>
+			<artifactId>thymeleaf</artifactId>
+			<version>${thymeleaf.version}</version>
 		</dependency>
+
+		<dependency>
+			<groupId>org.thymeleaf</groupId>
+			<artifactId>thymeleaf-spring4</artifactId>
+			<version>${thymeleaf.version}</version>
+		</dependency>
+
 	</dependencies>
 
 
