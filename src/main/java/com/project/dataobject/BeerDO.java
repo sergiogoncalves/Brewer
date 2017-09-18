@@ -1,7 +1,10 @@
 package com.project.dataobject;
 
+import org.hibernate.validator.constraints.NotBlank;
+
 public class BeerDO {
 	
+	@NotBlank
 	private String sku;
 	private String name;
 	
