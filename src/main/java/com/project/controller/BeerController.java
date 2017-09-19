@@ -15,7 +15,8 @@ import com.project.dataobject.BeerDO;
 public class BeerController {
 	
 	@RequestMapping("/beer/new")
-	public String addBeer() {
+	public String addBeer(BeerDO beerDO) {
+		
 		return "beer/ManageBeer";
 	}
 	
@@ -24,9 +25,7 @@ public class BeerController {
 		
 		if (result.hasErrors()) {
 			
-			model.addAttribute("mensagem", "Erro no formulário"); //Esse model não funciona para redirect
-			
-			return "beer/ManageBeer";
+			return addBeer(beerDO);
 		}
 		
 		System.out.println(">>>>> Add!");

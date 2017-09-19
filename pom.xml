@@ -104,7 +104,7 @@
     		<artifactId>thymeleaf-layout-dialect</artifactId>
     		<version>${thymeleaf-layout-dialect.version}</version>
 		</dependency>
-		
+
 	</dependencies>
 	
 	<repositories>
