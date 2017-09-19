@@ -37,5 +37,10 @@ public class BeerController {
 		
 		return "redirect:/beer/new";
 	}
+	
+	@RequestMapping("/beer/cadastro")
+	public String cadastroProduto() {
+		return "beer/cadastro-produto";
+	}
 
 }
